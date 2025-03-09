@@ -23,7 +23,7 @@ _____  ______  _____ _______ ______  _____
 
 ### Automatically 
 
-This `pester.yml` workflow will run every 30 minutes.
+This `pester.yml` workflow will run every hour at the half hour.
 
 ### Manually
 
