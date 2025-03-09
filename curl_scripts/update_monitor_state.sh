@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# Check if BASE_URL is set
+if [ -z "${BASE_URL}" ]; then
+    echo "Error: BASE_URL environment variable is not set"
+    exit 1
+fi
+
 response=$(curl -s -w "%{http_code}" -X 'POST' \
-  'http://localhost:8000/api/v1/monitors/1/state/' \
+  "${BASE_URL}/api/v1/monitors/1/state/" \
   -H 'Content-Type: application/json' \
   -d '{
   "state": "Normal"
