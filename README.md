@@ -20,6 +20,13 @@ _____  ______  _____ _______ ______  _____
 # Run
 
 ## GitHub
+
+### Automatically 
+
+This `pester.yml` workflow will run every 30 minutes.
+
+### Manually
+
 1. Navigate to Actions > Pester
 1. Click `Run workflow`
 
