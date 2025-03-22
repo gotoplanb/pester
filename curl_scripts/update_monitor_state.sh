@@ -7,7 +7,7 @@ if [ -z "${BASE_URL}" ]; then
 fi
 
 response=$(curl -s -w "%{http_code}" -X 'POST' \
-  "${BASE_URL}/api/v1/monitors/1/state/" \
+  "${BASE_URL}/api/v1/monitor/1/state/" \
   -H 'Content-Type: application/json' \
   -d '{
   "state": "Normal"
